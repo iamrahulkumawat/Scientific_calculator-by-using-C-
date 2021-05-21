@@ -1,13 +1,15 @@
+//Scientific-calcuator by using C++
 #include <iostream>
 #include <cmath>
 using namespace std;
-
+//================================================================================
+//Arithmetic code starts from here
 void arithmetic()
 {
 	int op = 0;
 	float a = 0;
 	float b = 0;
-
+//The \n character is used to find a newline character.
 	cout << "Select opeartion\n";
 	cout << "=========================================================\n";
 	cout << "[1] Addition\n";
@@ -45,7 +47,9 @@ void arithmetic()
 	}
 	cout << endl;
 }
-
+//Arithmetic code ends here
+//================================================================================
+//trignometric code starts from here
 void trignometric()
 {
 	int op = 0;
@@ -71,7 +75,9 @@ void trignometric()
 	}
 	cout << endl;
 }
-
+//trignometric code ends here
+//===============================================================================
+//exponential code starts from here
 void exponential()
 {
 	float base = 0.0;
@@ -83,7 +89,9 @@ void exponential()
 	cin >> ex;
 	cout << pow(base, ex) << endl;
 }
-
+//exponential code ends here
+//===============================================================================
+//logarithmic code starts from here
 void logarithmic()
 {
 	float value = 0.0;
@@ -91,7 +99,9 @@ void logarithmic()
 	cin >> value;
 	cout << log(value) << endl;
 }
-
+//logarithmic code ends here
+//===============================================================================
+//area code starts from here
 void area()
 {
 	int op = 0;
@@ -148,9 +158,9 @@ void area()
 	}
 	cout << endl;
 }
-
-
-
+//area code ends here
+//=================================================================================
+//basic code starts from here
 void basic()
 {
 	int op = 0;
@@ -226,13 +236,14 @@ void basic()
 	}
 	cout << endl;
 }
+//basic code ends here
 
 int main()
 {
 	int sel = 0;
 	char choice = 'y';
 	cout << "Advanced Calculator\n";
-
+//The operation that will do my calculator
 	cout << "=========================================================\n";
 	cout << "[1] Arithmetic\n";
 	cout << "[2] Trignometric\n";
